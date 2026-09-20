@@ -1,0 +1,88 @@
+{
+  "output": "renders/fire.gif",
+  "sim": {
+    "cols": 220,
+    "rows": 124,
+    "steps": 260,
+    "upscale": 4,
+    "fps": 30,
+    "viscosity": 0.0002,
+    "dissipation": 0.98,
+    "vorticity": 6,
+    "pressure_iters": 40,
+    "buoyancy": 0.45,
+    "velocity_smoothing": 0.25
+  },
+  "background": {
+    "color": [
+      12,
+      6,
+      3
+    ],
+    "vignette": 0.5,
+    "exposure": 1.5
+  },
+  "sources": [
+    {
+      "pos": [
+        0.3,
+        0.93
+      ],
+      "radius": 0.06,
+      "color": [
+        1.0,
+        0.45,
+        0.08
+      ],
+      "velocity": [
+        0,
+        -1.2
+      ],
+      "emit": "jet",
+      "strength": 1.0,
+      "rate": 1.68,
+      "temperature": 12
+    },
+    {
+      "pos": [
+        0.5,
+        0.95
+      ],
+      "radius": 0.07,
+      "color": [
+        1.0,
+        0.2,
+        0.04
+      ],
+      "velocity": [
+        0,
+        -1.6
+      ],
+      "emit": "jet",
+      "strength": 1.2,
+      "rate": 2.16,
+      "temperature": 15
+    },
+    {
+      "pos": [
+        0.7,
+        0.93
+      ],
+      "radius": 0.06,
+      "color": [
+        1.0,
+        0.75,
+        0.15
+      ],
+      "velocity": [
+        0,
+        -1.0
+      ],
+      "emit": "jet",
+      "strength": 0.9,
+      "rate": 1.56,
+      "temperature": 10
+    }
+  ],
+  "forces": []
+}

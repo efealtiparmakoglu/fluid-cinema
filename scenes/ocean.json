@@ -1,0 +1,96 @@
+{
+  "sim": {
+    "cols": 220,
+    "rows": 124,
+    "steps": 300,
+    "upscale": 4,
+    "fps": 30,
+    "viscosity": 0.0003,
+    "dissipation": 0.997,
+    "vorticity": 3,
+    "pressure_iters": 40,
+    "buoyancy": 0.1,
+    "velocity_smoothing": 0.25
+  },
+  "background": {
+    "color": [
+      4,
+      10,
+      16
+    ],
+    "vignette": 0.5,
+    "exposure": 1.8
+  },
+  "sources": [
+    {
+      "pos": [
+        0.15,
+        0.75
+      ],
+      "radius": 0.05,
+      "color": [
+        0.1,
+        0.75,
+        0.95
+      ],
+      "velocity": [
+        2.4,
+        -0.8
+      ],
+      "emit": "jet",
+      "strength": 0.9,
+      "rate": 2.8
+    },
+    {
+      "pos": [
+        0.4,
+        0.88
+      ],
+      "radius": 0.05,
+      "color": [
+        0.5,
+        0.95,
+        1.0
+      ],
+      "velocity": [
+        2.2,
+        -1.2
+      ],
+      "emit": "jet",
+      "strength": 0.9,
+      "rate": 2.4,
+      "temperature": 8
+    },
+    {
+      "pos": [
+        0.7,
+        0.8
+      ],
+      "radius": 0.05,
+      "color": [
+        0.05,
+        0.4,
+        0.85
+      ],
+      "velocity": [
+        2.0,
+        -0.6
+      ],
+      "emit": "jet",
+      "strength": 0.9,
+      "rate": 2.6
+    }
+  ],
+  "forces": [
+    {
+      "type": "wind",
+      "dir": [
+        1.0,
+        -0.2
+      ],
+      "strength": 0.8
+    }
+  ],
+  "obstacles": [],
+  "output": "renders/ocean.gif"
+}

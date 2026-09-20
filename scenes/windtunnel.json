@@ -1,0 +1,84 @@
+{
+  "sim": {
+    "cols": 220,
+    "rows": 124,
+    "steps": 300,
+    "upscale": 4,
+    "fps": 30,
+    "viscosity": 0.0003,
+    "dissipation": 0.997,
+    "vorticity": 3.5,
+    "pressure_iters": 40,
+    "buoyancy": 0.0,
+    "velocity_smoothing": 0.25
+  },
+  "background": {
+    "color": [
+      10,
+      12,
+      10
+    ],
+    "vignette": 0.4,
+    "exposure": 2.02
+  },
+  "sources": [
+    {
+      "pos": [
+        0.12,
+        0.5
+      ],
+      "radius": 0.045,
+      "color": [
+        0.35,
+        1.0,
+        0.7
+      ],
+      "velocity": [
+        5.0,
+        0
+      ],
+      "emit": "jet",
+      "strength": 1.0,
+      "rate": 4.0
+    },
+    {
+      "pos": [
+        0.12,
+        0.35
+      ],
+      "radius": 0.03,
+      "color": [
+        1.0,
+        0.8,
+        0.3
+      ],
+      "velocity": [
+        5.0,
+        0
+      ],
+      "emit": "jet",
+      "strength": 0.8,
+      "rate": 2.5
+    }
+  ],
+  "forces": [
+    {
+      "type": "wind",
+      "dir": [
+        1.0,
+        0
+      ],
+      "strength": 2.0
+    }
+  ],
+  "obstacles": [
+    {
+      "pos": [
+        0.55,
+        0.5
+      ],
+      "radius": 0.09
+    }
+  ],
+  "output": "renders/windtunnel.gif"
+}

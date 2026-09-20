@@ -1,0 +1,89 @@
+{
+  "sim": {
+    "cols": 220,
+    "rows": 124,
+    "steps": 300,
+    "upscale": 4,
+    "fps": 30,
+    "viscosity": 0.0003,
+    "dissipation": 0.997,
+    "vorticity": 4,
+    "pressure_iters": 40,
+    "buoyancy": 0.25,
+    "velocity_smoothing": 0.25
+  },
+  "background": {
+    "color": [
+      8,
+      8,
+      12
+    ],
+    "vignette": 0.5,
+    "exposure": 1.8
+  },
+  "sources": [
+    {
+      "pos": [
+        0.3,
+        0.92
+      ],
+      "radius": 0.05,
+      "color": [
+        1.0,
+        0.15,
+        0.2
+      ],
+      "velocity": [
+        0,
+        -1.4
+      ],
+      "emit": "jet",
+      "strength": 1.0,
+      "rate": 3.0,
+      "temperature": 10
+    },
+    {
+      "pos": [
+        0.5,
+        0.94
+      ],
+      "radius": 0.05,
+      "color": [
+        0.15,
+        1.0,
+        0.35
+      ],
+      "velocity": [
+        0,
+        -1.6
+      ],
+      "emit": "jet",
+      "strength": 1.1,
+      "rate": 3.0,
+      "temperature": 12
+    },
+    {
+      "pos": [
+        0.7,
+        0.92
+      ],
+      "radius": 0.05,
+      "color": [
+        0.25,
+        0.45,
+        1.0
+      ],
+      "velocity": [
+        0,
+        -1.4
+      ],
+      "emit": "jet",
+      "strength": 1.0,
+      "rate": 3.0,
+      "temperature": 10
+    }
+  ],
+  "forces": [],
+  "obstacles": [],
+  "output": "renders/plume.gif"
+}

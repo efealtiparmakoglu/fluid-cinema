@@ -1,0 +1,89 @@
+{
+  "output": "renders/nebula.gif",
+  "sim": {
+    "cols": 220,
+    "rows": 124,
+    "steps": 300,
+    "upscale": 4,
+    "fps": 30,
+    "viscosity": 0.0002,
+    "dissipation": 0.985,
+    "vorticity": 4,
+    "pressure_iters": 40,
+    "buoyancy": 0.3,
+    "velocity_smoothing": 0.25
+  },
+  "background": {
+    "color": [
+      10,
+      6,
+      16
+    ],
+    "vignette": 0.5,
+    "exposure": 1.8
+  },
+  "sources": [
+    {
+      "pos": [
+        0.28,
+        0.94
+      ],
+      "radius": 0.06,
+      "color": [
+        0.9,
+        0.2,
+        0.9
+      ],
+      "velocity": [
+        0,
+        -1.3
+      ],
+      "emit": "jet",
+      "strength": 1.0,
+      "rate": 1.4,
+      "temperature": 12
+    },
+    {
+      "pos": [
+        0.5,
+        0.96
+      ],
+      "radius": 0.07,
+      "color": [
+        0.35,
+        0.3,
+        1.0
+      ],
+      "velocity": [
+        0,
+        -1.7
+      ],
+      "emit": "jet",
+      "strength": 1.2,
+      "rate": 1.7,
+      "temperature": 15
+    },
+    {
+      "pos": [
+        0.72,
+        0.94
+      ],
+      "radius": 0.06,
+      "color": [
+        1.0,
+        0.35,
+        0.55
+      ],
+      "velocity": [
+        0,
+        -1.1
+      ],
+      "emit": "jet",
+      "strength": 0.9,
+      "rate": 1.3,
+      "temperature": 10
+    }
+  ],
+  "forces": [],
+  "obstacles": []
+}

@@ -1,0 +1,95 @@
+{
+  "sim": {
+    "cols": 220,
+    "rows": 124,
+    "steps": 300,
+    "upscale": 4,
+    "fps": 30,
+    "viscosity": 0.0008,
+    "dissipation": 0.997,
+    "vorticity": 1.2,
+    "pressure_iters": 40,
+    "buoyancy": 0.0,
+    "velocity_smoothing": 0.25
+  },
+  "background": {
+    "color": [
+      4,
+      8,
+      12
+    ],
+    "vignette": 0.55,
+    "exposure": 1.8
+  },
+  "sources": [
+    {
+      "pos": [
+        0.15,
+        0.18
+      ],
+      "radius": 0.05,
+      "color": [
+        0.2,
+        1.0,
+        0.55
+      ],
+      "velocity": [
+        2.2,
+        0.15
+      ],
+      "emit": "jet",
+      "strength": 0.7,
+      "rate": 1.8
+    },
+    {
+      "pos": [
+        0.5,
+        0.12
+      ],
+      "radius": 0.05,
+      "color": [
+        0.45,
+        0.35,
+        1.0
+      ],
+      "velocity": [
+        2.2,
+        0.1
+      ],
+      "emit": "jet",
+      "strength": 0.7,
+      "rate": 1.6
+    },
+    {
+      "pos": [
+        0.82,
+        0.2
+      ],
+      "radius": 0.05,
+      "color": [
+        0.1,
+        0.9,
+        0.8
+      ],
+      "velocity": [
+        2.0,
+        0.2
+      ],
+      "emit": "jet",
+      "strength": 0.7,
+      "rate": 1.8
+    }
+  ],
+  "forces": [
+    {
+      "type": "wind",
+      "dir": [
+        1.0,
+        0
+      ],
+      "strength": 0.5
+    }
+  ],
+  "obstacles": [],
+  "output": "renders/aurora.gif"
+}
